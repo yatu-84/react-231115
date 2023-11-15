@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Page1 from './page1'; // ファイル名が page1.js から Page1.js に変わっていると仮定
+import Page2 from './page2';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Routes>
+          <Route path="/react-231115" element={<Page1 />} />
+          <Route path="/react-231115/page2" element={<Page2 />} />
+        </Routes>
+      </Router>
+    );
+  }
 }
 
 export default App;
