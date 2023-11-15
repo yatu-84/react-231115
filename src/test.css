@@ -3,10 +3,16 @@
 }
 
 .page2{
-   background-color: rgb(110, 110, 110);
-   text-align: center;
+    text-align: center;
+}
+
+.p{
+    font-size: 250%;
+    margin: 0%;
 }
 
 .imgNext{
-   width: 70%;
+   height: 70%;
+   width: 50%;
+   margin:0% 0% 0px 0px;
 }

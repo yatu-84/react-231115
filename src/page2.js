@@ -8,7 +8,7 @@ class page2 extends React.Component {   //page2クラスにReact.Componentを継
     render() {                          //画面表示の為のrenderメソッドを定義する
         return (
             <div className='page2'>
-                this is page2(ﾟ∀ﾟ)
+                <p className='p'>this is page2(ﾟ∀ﾟ)</p>
                 <br/>
                 Click on the image to go to the page1
                 <br/>
