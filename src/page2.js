@@ -1,14 +1,21 @@
 import React from 'react';              //Reactを読み込んでいる
 import { Link } from 'react-router-dom';
+import dummy from "./img/test.png"
+import './test.css'
 
 class page2 extends React.Component {   //page2クラスにReact.Componentを継承する
 
     render() {                          //画面表示の為のrenderメソッドを定義する
         return (
-            <div>
+            <div className='page2'>
                 this is page2(ﾟ∀ﾟ)
                 <br/>
-                <Link to={`/react-231115`}>Go To page1</Link>
+                Click on the image to go to the page1
+                <br/>
+                <Link to={`/react-231115`}>
+                    <img className="imgNext" src={dummy} />
+                </Link>
+                
             </div>
         );
     }
