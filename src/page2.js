@@ -1,6 +1,6 @@
 import React from 'react';              //Reactを読み込んでいる
 import { Link } from 'react-router-dom';
-import dummy from "./img/test.png"
+import dummy from "./img/test.jpg"
 import './test.css'
 
 class page2 extends React.Component {   //page2クラスにReact.Componentを継承する
